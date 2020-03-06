@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<script type="text/javascript">
+			window.onload = function(){
+				var prev = document.getElementById("prev");
+				var next = document.getElementById("next");
+				var items = document.getElementsByClassName("item"); 
+				var index = 1;
+				var img = document.getElementById("img");
+				
+				prev.onclick = function(){
+					if(index==1){
+						img.src = "img/7.jpg";
+					};
+					if(index==2){
+						img.src = "img/1.jpg";
+					};
+					if(index==3){
+						img.src = "img/2.jpg";;
+					};
+					if(index==4){
+						img.src = "img/3.jpg";
+					};
+					if(index==5){
+						img.src = "img/4.jpg";
+					};
+					if(index==6){
+						img.src = "img/5.jpg";
+					};
+					if(index==7){
+						img.src = "img/6.jpg";
+					};
+					index--;
+					if(index==0){
+						index=7;
+					};
+					
+				};
+				next.onclick = function(){
+					if(index==1){
+						img.src = "img/2.jpg";
+					};
+					if(index==2){
+						img.src = "img/3.jpg";
+					};
+					if(index==3){
+						img.src = "img/4.jpg";;
+					};
+					if(index==4){
+						img.src = "img/5.jpg";
+					};
+					if(index==5){
+						img.src = "img/6.jpg";
+					};
+					if(index==6){
+						img.src = "img/7.jpg";
+					};
+					if(index==7){
+						img.src = "img/1.jpg";
+					};
+					index++;
+					if(index==7){
+						index=1;
+					};	
+				};
+				var time;
+				time = setInterval(function(){
+					if(index==1){
+						img.src = "img/2.jpg";
+					};
+					if(index==2){
+						img.src = "img/3.jpg";
+					};
+					if(index==3){
+						img.src = "img/4.jpg";;
+					};
+					if(index==4){
+						img.src = "img/5.jpg";
+					};
+					if(index==5){
+						img.src = "img/6.jpg";
+					};
+					if(index==6){
+						img.src = "img/7.jpg";
+					};
+					if(index==7){
+						img.src = "img/1.jpg";
+					};
+					index++;
+					if(index==7){
+						index=1;
+					};
+				},4000)	
+				
+				var qw1 = document.getElementById("l-1");
+				var qw2 = document.getElementById("l-2");
+				var qw3 = document.getElementById("l-3");
+				var qw4 = document.getElementById("l-4");
+				var qw5 = document.getElementById("l-5");
+				var qw6 = document.getElementById("l-6");
+				var img_1 = document.getElementById("img-1");
+				var img_2 = document.getElementById("img-2");
+				var img_3 = document.getElementById("img-3");
+				var img_4 = document.getElementById("img-4");
+				var img_5 = document.getElementById("img-5");
+				qw1.onmousemove = function(){
+					img_1.src = "img/g1.png";
+					img_2.src = "img/g2.png";
+					img_3.src = "img/g3.png";
+					img_4.src = "img/g4.png";
+					img_5.src = "img/g5.png";	
+				};
+				qw2.onmousemove = function(){
+					img_1.src = "img/g6.png";
+					img_2.src = "img/g7.png";
+					img_3.src = "img/g8.png";
+					img_4.src = "img/g9.png";
+					img_5.src = "img/g10.png";	
+				};
+				qw3.onmousemove = function(){
+					img_1.src = "img/g11.png";
+					img_2.src = "img/g12.png";
+					img_3.src = "img/g13.png";
+					img_4.src = "img/g14.png";
+					img_5.src = "img/g15.png";	
+				};
+				qw4.onmousemove = function(){
+					img_1.src = "img/g16.png";
+					img_2.src = "img/g17.png";
+					img_3.src = "img/g18.png";
+					img_4.src = "img/g19.png";
+					img_5.src = "img/g20.png";	
+				};
+				qw5.onmousemove = function(){
+					img_1.src = "img/g21.png";
+					img_2.src = "img/g22.png";
+					img_3.src = "img/g23.png";
+					img_4.src = "img/g24.png";
+					img_5.src = "img/g25.png";	
+				};
+				qw6.onmousemove = function(){
+					img_1.src = "img/g1.png";
+					img_2.src = "img/g2.png";
+					img_3.src = "img/g3.png";
+					img_4.src = "img/g4.png";
+					img_5.src = "img/g5.png";	
+				};
+			};
+		</script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			a{
+				text-decoration: none; 
+				color: #333333;
+			}
+			
+			#outer{
+				width: 1351px;
+				/*height: 446px;*/
+				position: relative;
+			}
+			.imgList{
+				position: relative;
+				width: 1351px;
+				height: 350px;
+			}
+			
+			.item{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.btn{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: 122px;
+				font-size: x-large;
+			}
+			#prev{
+				left: 0px;
+			}
+			#next{
+				right: 0px;
+			}
+			.header{
+				/*background-color: red;*/
+				padding-left: 100px;
+				padding-right: 100px;
+				padding-top: 25px;
+			}
+			#sousuokuang{
+				height: 34px;
+				padding: 0px;
+				display: inline-block;
+				padding-top: -10px;
+			}
+			/*头部搜索框*/
+			#header-2{
+				float: right;
+			}
+			#sheZhi{
+				float: right;
+				padding-left: 50px;
+			}
+			
+			#ul-1{
+				list-style: none;
+				float: right;
+				
+			}
+			
+			#sheZhi ul li{
+				float: right;
+				padding-right: 20px;
+				
+			}
+			
+			.bodyer{
+				width: 1251px;
+				/*background-color: aqua;*/
+				/*margin-right: 100px;*/
+				/*margin-left: 100px;*/
+				padding-left: 100px;
+				/*padding-right: 100px;*/
+			}
+			#h2-1{
+				display: inline-block;
+			}
+			
+			.boder-2{
+				width: 100%;
+				padding-top: 20px;
+				padding-bottom: 40px;
+				
+			}
+			
+			.boder-2 a{
+				padding-right: 25px;
+			}
+			
+			.img-ren{
+				border-radius: 50%;
+				display: inline;
+			}
+			
+			.renwu{
+				float: right;
+			}
+			
+			.a-1{
+				text-decoration: none;
+				display: inline-block;
+				padding-right: 20px;
+				/*width: 377;*/
+			}
+			
+			.span-1{
+				vertical-align: top;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			
+			#s-1{
+				/*font-size: 14px;*/
+				color: #333;
+			}
+			
+			#s-2{
+				color: #49af4f;
+			}
+			
+			.card{
+				display: inline;
+				padding-right: 20px;
+			}
+			
+			.caed-2{
+				float: left
+				
+				background-color: #333333;
+			}
+			
+			.peoplecaed{
+				width: 377px;
+				height: 100px;
+				/*background-color: red;*/
+			}
+			
+			.card-3{
+				float: left;
+				padding-right: 20px;
+			}
+			
+			#a-i1{
+				display: block;
+				padding-left: 1000px;
+			}
+			
+			.d-c2{
+				float: left;
+				margin-right: 19px;
+			}
+			
+			.p-1{
+				font-size: 14px;
+				overflow: hidden;
+				color: #666;
+				
+			}
+			
+			#clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+				
+			}
+			.clearfix{
+				content: "";
+				display: block;
+				clear: both;
+				zoom: 1;
+				
+			}
+			
+			
+			.bodyer-5{
+				padding-top: 25px;
+			}
+					
+			.gouwu ul{
+				list-style: none;
+			}
+				
+			.gouwu ul li{
+				float: left;
+				/*margin-right: 20px;*/
+				width: 190px;
+				/*height: 60px;*/
+				background-color: #666;
+				text-align: center;
+				font-size: 14px;
+				height: 40px;
+				color: #fff;
+				line-height: 40px;
+				
+				
+			}	
+			.gouwu ul li ul li{
+				text-align: center;
+				font-size: 19px;
+				color: #333333;
+			}
+			
+			.gouwu ul li:hover{
+				background-color: #49af4f;
+			}
+			
+			.img-gou{
+				float: left;
+				margin-right: 15px;
+				
+			}	
+			
+			#z{
+				margin-top: 45px;
+			}
+				
+			.class-1{
+				margin-top: 40px;
+			}	
+			
+			.c-2{
+				margin-bottom: 15px;;
+				
+			}
+			
+			/*#dhl{
+				position: relative;
+			}*/
+			#dhl ul{
+				list-style: none;
+				position: relative;
+			}
+			#dhl ul li{
+				float: left;
+				width: 80px;
+				height: 20px;
+				z-index: 100;
+				background-color: #FFFFFF;
+			}
+					
+			#dhl ul li ul{
+				z-index: 100;
+				position: relative;
+			}	
+			#dhl ul li ul li{
+				z-index: 100;
+				width: 110px;
+					display: none;
+					text-indent: 1em;
+					height: 30px;
+					
+			}	
+			#dhl ul li:hover ul li{
+				width: 110px;
+				z-index: 100;
+				display: block;
+			}
+			#dhl ul li ul li ul{
+				position: relative;
+				z-index: 100;
+			}
+			/*导航*/
+			.dhld{
+				height: 345px;
+				background-color: #FFFFFF;
+				width: 670px;
+				position: absolute;
+				top: 0;
+				left: 110px;
+				display: none;
+				padding-left: 40px;
+			}
+			#dhl ul li ul li:hover{
+				background-color: red;
+			}
+			
+			#dhl ul li ul li:hover .dhld{
+				display: block;
+			}
+			
+			.sp-2 a{
+				color: lawngreen;
+			}
+			
+			.u{
+				display: block;
+			}
+			
+			
+			.div-1{
+				display: block;
+			}
+			
+			#span-1{
+				display: inline-block;
+				padding-left: 610px;
+			}
+			#span-2{
+				display: inline-block;
+				padding-left: 20px;
+			}
+			#span-3{
+				display: inline-block;
+				padding-left: 20px;
+			}
+			
+			
+			.footer{
+				background-color: #333333;
+				height: 175px;
+			}
+			#footer-1{
+				display: inline-block;
+				width: 50%;
+			}
+			#footer-2{
+				display: inline-block;
+				width: 50%;
+			}
+			.footer a{
+				color: #FFFFFF;
+			}
+			.footer span{
+				display: inline-block;
+				margin-right: 20px;
+			}
+			.footer p{
+				color:wheat;
+			}
+			
+			#btu{
+				height: 40px;
+				margin-left: -4px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<!--头部图片-->
+			<a href="#"><img src="img/headre.png"/></a>
+			
+			<!--设置区-->
+			<div id="sheZhi">
+				<ul id="ul-1">
+					<li id="li-1"><img src="img/x3.png" id="img2"/></li>					
+					<li><a href="#">登录/注册</a></li>
+					<li><a href="#"><img src="img/x2.png" alt="" /></a></li>
+					<li><a href="#"><img src="img/x1.png" alt="" /></a></li>
+					<li><a href="#">我的学习</a></li>
+					<li><a href="#">后台管理</a></li>
+				</ul>
+			</div>
+			
+			<!--搜索框-->
+			<div id="header-2">
+				<from>
+					<input type="text" name="sousuokuang" id="sousuokuang" value="行家专业亲授，直击就业痛点" />
+					<input type="submit" value="搜索"  id="btu"/>
+				</from>
+			</div>
+			<div id="">		
+			</div>
+			
+			
+			
+			<div id="dhl">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li>
+						<a href="#">课程分类</a>
+						<ul>
+							<li>
+								<a href="#">职场提升</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">求职准备</a></span>
+										<ul class="u">
+											<li><a href="#">自我认知</a></li>
+											<li><a href="#">职业形象</a></li>
+											<li><a href="#">职业规划</a></li>
+											<li><a href="#">求职应聘</a></li>
+											
+										</ul>
+										
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">办公软件</a></span>
+										<ul class="u">
+											<li><a href="#">PPT</a></li>
+											<li><a href="#">Excel</a></li>
+											<li><a href="#">Word</a></li>
+											<li><a href="#">Keynote</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">效率工作</a></span>
+										<ul class="u">
+											<li><a href="#">思维导图</a></li>
+											<li><a href="#">时间管理</a></li>
+											<li><a href="#">笔记工具</a></li>
+											<li><a href="#">项目管理</a></li>
+											<li><a href="#">更多效率</a></li>
+											<li><a href="#">考试认证</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">电脑基础</a></span>
+										<ul class="u">
+											<li><a href="#">基础知识</a></li>
+											<li><a href="#">操作系统</a></li>
+											<li><a href="#">常用技巧</a></li>
+											
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">个人提升</a></span>
+										<ul class="u">
+											<li><a href="#">学习能力</a></li>
+											<li><a href="#">思维能力</a></li>
+											<li><a href="#">表达能力</a></li>
+											<li><a href="#">自我能力</a></li>
+											<li><a href="#">人脉管理</a></li>
+											
+										</ul>
+									<br />
+									
+								</div>
+							</li>
+							
+							<li>
+								<a href="#">编程与开发</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">编程语言</a></span>
+										<ul class="u">
+											<li><a href="#">Python</a></li>
+											<li><a href="#">PHP</a></li>
+											<li><a href="#">java</a></li>
+											<li><a href="#">c</a></li>
+											<li><a href="#">c++</a></li>
+											<li><a href="#">c#</a></li>
+											<li><a href="#">R</a></li>
+											
+										</ul>
+										<br />
+									</div>
+									<br /><br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">前端开发</a></span>
+										<ul class="u">
+											<li><a href="#">语言基础</a></li>
+											<li><a href="#">前端框架</a></li>
+											<li><a href="#">开发实践</a></li>	
+										</ul>
+										<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">后端开发</a></span>
+										<ul class="u">
+											<li><a href="#">java Web</a></li>
+											<li><a href="#">Python</a></li>
+											<li><a href="#">PHP Web</a></li>	
+											<li><a href="#">net</a></li>	
+										</ul>
+										<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">后端开发</a></span>
+										<ul class="u">
+											<li><a href="#">java Web</a></li>
+											<li><a href="#">Python</a></li>
+											<li><a href="#">PHP Web</a></li>	
+											<li><a href="#">net</a></li>	
+										</ul>
+										<br />
+									</div>
+									<br />
+								</div>
+								
+							</li>
+							
+							<li>
+								<a href="#">AI/数据科学</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">人工智能</a></span>
+										<ul class="u">
+											<li><a href="#">语言基础</a></li>
+											<li><a href="#">Python</a></li>
+											<li><a href="#">PHP Web</a></li>	
+											<li><a href="#">net</a></li>	
+										</ul>
+										<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">后端开发</a></span>
+										<ul class="u">
+											<li><a href="#">java Web</a></li>
+											<li><a href="#">Python</a></li>
+											<li><a href="#">PHP Web</a></li>	
+											<li><a href="#">net</a></li>	
+										</ul>
+										<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">数据科学</a></span>
+										<ul class="u">
+											<li><a href="#">数据分析</a></li>
+											<li><a href="#">数据挖掘</a></li>
+											<li><a href="#">数据基础</a></li>	
+											<li><a href="#">net</a></li>	
+										</ul>
+										<br />
+									</div>
+									<br />
+									
+								</div>
+								<br />
+							</li>
+							
+							<li>
+								<a href="#">产品与运营</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">产品经理</a></span>
+										<ul class="u">
+											<li><a href="#">交互色剂</a></li>
+											<li><a href="#">产品入门</a></li>
+											<li><a href="#">项目观念</a></li>
+											<li><a href="#">商业模式</a></li>
+										</ul>
+										<br />
+									</div>	
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">型媒体运营</a></span>
+										<ul class="u">
+											<li><a href="#">媒体入门</a></li>
+											<li><a href="#">文案写作</a></li>
+											<li><a href="#">公众号</a></li>
+											<li><a href="#">商业模式</a></li>
+										</ul>
+										<br />
+									</div>	
+									<br />
+								</div>
+								<br />
+							</li>
+							
+							<li>
+								<a href="#">设计创意</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">求职准备</a></span>
+										<ul class="u">
+											<li><a href="#">自我认知</a></li>
+											<li><a href="#">职业形象</a></li>
+											<li><a href="#">职业规划</a></li>
+											<li><a href="#">求职应聘</a></li>
+											
+										</ul>
+										
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">办公软件</a></span>
+										<ul class="u">
+											<li><a href="#">PPT</a></li>
+											<li><a href="#">Excel</a></li>
+											<li><a href="#">Word</a></li>
+											<li><a href="#">Keynote</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">效率工作</a></span>
+										<ul class="u">
+											<li><a href="#">思维导图</a></li>
+											<li><a href="#">时间管理</a></li>
+											<li><a href="#">笔记工具</a></li>
+											<li><a href="#">项目管理</a></li>
+											<li><a href="#">更多效率</a></li>
+											<li><a href="#">考试认证</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">电脑基础</a></span>
+										<ul class="u">
+											<li><a href="#">基础知识</a></li>
+											<li><a href="#">操作系统</a></li>
+											<li><a href="#">常用技巧</a></li>
+											
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">个人提升</a></span>
+										<ul class="u">
+											<li><a href="#">学习能力</a></li>
+											<li><a href="#">思维能力</a></li>
+											<li><a href="#">表达能力</a></li>
+											<li><a href="#">自我能力</a></li>
+											<li><a href="#">人脉管理</a></li>
+											
+										</ul>
+									<br />
+								</div><br />
+							</li>
+							
+							<li>
+								<a href="#">电商运营</a>
+								<div class="dhld">
+									<<div class="div-1">
+										<span class="sp-2"><a href="#">求职准备</a></span>
+										<ul class="u">
+											<li><a href="#">自我认知</a></li>
+											<li><a href="#">职业形象</a></li>
+											<li><a href="#">职业规划</a></li>
+											<li><a href="#">求职应聘</a></li>
+											
+										</ul>
+										
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">办公软件</a></span>
+										<ul class="u">
+											<li><a href="#">PPT</a></li>
+											<li><a href="#">Excel</a></li>
+											<li><a href="#">Word</a></li>
+											<li><a href="#">Keynote</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">效率工作</a></span>
+										<ul class="u">
+											<li><a href="#">思维导图</a></li>
+											<li><a href="#">时间管理</a></li>
+											<li><a href="#">笔记工具</a></li>
+											<li><a href="#">项目管理</a></li>
+											<li><a href="#">更多效率</a></li>
+											<li><a href="#">考试认证</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">电脑基础</a></span>
+										<ul class="u">
+											<li><a href="#">基础知识</a></li>
+											<li><a href="#">操作系统</a></li>
+											<li><a href="#">常用技巧</a></li>
+											
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">个人提升</a></span>
+										<ul class="u">
+											<li><a href="#">学习能力</a></li>
+											<li><a href="#">思维能力</a></li>
+											<li><a href="#">表达能力</a></li>
+											<li><a href="#">自我能力</a></li>
+											<li><a href="#">人脉管理</a></li>
+											
+										</ul>
+									<br />
+								</div><br />
+							</li>
+							
+							<li>
+								<a href="#">语言学习</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">求职准备</a></span>
+										<ul class="u">
+											<li><a href="#">自我认知</a></li>
+											<li><a href="#">职业形象</a></li>
+											<li><a href="#">职业规划</a></li>
+											<li><a href="#">求职应聘</a></li>
+											
+										</ul>
+										
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">办公软件</a></span>
+										<ul class="u">
+											<li><a href="#">PPT</a></li>
+											<li><a href="#">Excel</a></li>
+											<li><a href="#">Word</a></li>
+											<li><a href="#">Keynote</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">效率工作</a></span>
+										<ul class="u">
+											<li><a href="#">思维导图</a></li>
+											<li><a href="#">时间管理</a></li>
+											<li><a href="#">笔记工具</a></li>
+											<li><a href="#">项目管理</a></li>
+											<li><a href="#">更多效率</a></li>
+											<li><a href="#">考试认证</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">电脑基础</a></span>
+										<ul class="u">
+											<li><a href="#">基础知识</a></li>
+											<li><a href="#">操作系统</a></li>
+											<li><a href="#">常用技巧</a></li>
+											
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">个人提升</a></span>
+										<ul class="u">
+											<li><a href="#">学习能力</a></li>
+											<li><a href="#">思维能力</a></li>
+											<li><a href="#">表达能力</a></li>
+											<li><a href="#">自我能力</a></li>
+											<li><a href="#">人脉管理</a></li>
+											
+										</ul>
+									<br />
+								</div><br />
+							</li>
+							
+							<li>
+								<a href="#">职业考试</a>
+								<div class="dhld">
+									<div class="div-1">
+										<span class="sp-2"><a href="#">求职准备</a></span>
+										<ul class="u">
+											<li><a href="#">自我认知</a></li>
+											<li><a href="#">职业形象</a></li>
+											<li><a href="#">职业规划</a></li>
+											<li><a href="#">求职应聘</a></li>
+											
+										</ul>
+										
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">办公软件</a></span>
+										<ul class="u">
+											<li><a href="#">PPT</a></li>
+											<li><a href="#">Excel</a></li>
+											<li><a href="#">Word</a></li>
+											<li><a href="#">Keynote</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">效率工作</a></span>
+										<ul class="u">
+											<li><a href="#">思维导图</a></li>
+											<li><a href="#">时间管理</a></li>
+											<li><a href="#">笔记工具</a></li>
+											<li><a href="#">项目管理</a></li>
+											<li><a href="#">更多效率</a></li>
+											<li><a href="#">考试认证</a></li>
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">电脑基础</a></span>
+										<ul class="u">
+											<li><a href="#">基础知识</a></li>
+											<li><a href="#">操作系统</a></li>
+											<li><a href="#">常用技巧</a></li>
+											
+										</ul>
+									<br />
+									</div>
+									<br />
+									<div class="div-1">
+										<span class="sp-2"><a href="#">个人提升</a></span>
+										<ul class="u">
+											<li><a href="#">学习能力</a></li>
+											<li><a href="#">思维能力</a></li>
+											<li><a href="#">表达能力</a></li>
+											<li><a href="#">自我能力</a></li>
+											<li><a href="#">人脉管理</a></li>
+											
+										</ul>
+									<br />
+								</div><br />
+							</li>
+							
+						</ul>
+					</li>
+					<li><a href="#">微专业</a></li>
+				</ul>
+				<span id="span-1"><a href="#"><img src="img/t1.png" alt="" /></a></span>
+				<span id="span-2"><a href="#"><img src="img/t2.png"/></a></span>
+				<span id="span-3"><a href="#"><img src="img/t3.png" alt="" /></a></span>
+			</div>
+			<div class="clearfix">
+				
+			</div>
+			
+			 
+			 
+		</div>
+		<!--轮播图 -->
+		<div id="outer">
+			<ul class="imgList">
+				<li class="item">
+					<img src="img/1.jpg" alt="" id="img"/>
+				</li >	
+			</ul>
+			<button type="button" class="btn" id="prev"> < </button>
+			<button type="button" class="btn" id="next"> > </button>
+			
+		</div>
+		
+		<!--内容-->
+		<div class="bodyer">
+			
+			<!--字-->
+			<div class="bodyer-1">
+				<h2 id="h2-1">系统化学习路径</h2>
+				<span>网易云课堂六大课程体系，让学习有章有序</span>
+			</div>
+			
+			<!--图片链接25-->
+			<div class="boder-2">
+				<a href="#"><img src="img/l1.png"/></a>
+				<a href="#"><img src="img/l2.png"/></a>
+				<a href="#"><img src="img/l3.png"/></a>
+				<a href="#"><img src="img/l4.png"/></a>
+				<a href="#"><img src="img/l5.png"/></a>
+				<a href="#"><img src="img/l6.png"/></a>
+			</div>
+			
+			<!--课堂直播-->
+			<div class="bodyer-3">
+			<h2>课堂直播</h2>
+			
+			<!--人物卡片-->
+			<a href="#" class="a-1">
+				<div class="peoplecaed">
+					<div class="card-3">
+						<img class="img-ren" src="img/r1.jpg"/>
+					</div>
+					<div class="card-3">
+						<span class="span-1" id="s-1">今天  20:20 | </span>
+						<span class="span-1" id="s-2">开启提醒</span>
+						<br /><br />
+						<p>鼠年画鼠，快速设计卡通鼠IP形象</p>
+						<!--<br />-->
+						<p>木松子旭 网易特邀设计师</p>
+					</div>	
+				</div>
+				
+				
+			<a href="#" class="a-1">
+				<div class="peoplecaed">
+					<div class="card-3">
+						<img class="img-ren" src="img/r2.jpg"/>
+					</div>
+					<div class="card-3">
+						<span class="span-1" id="s-1">今天  20:20 | </span>
+						<span class="span-1" id="s-2">开启提醒</span>
+						<br /><br />
+						<p>鼠年画鼠，快速设计卡通鼠IP形象</p>
+						<!--<br />-->
+						<p>木松子旭 网易特邀设计师</p>
+					</div>	
+				</div>
+
+			</a>
+			
+			
+			<a href="#" class="a-1">
+				<div class="peoplecaed">
+					<div class="card-3">
+						<img class="img-ren" src="img/r3.png"/>
+					</div>
+					<div class="card-3">
+						<span class="span-1" id="s-1">今天  20:20 | </span>
+						<span class="span-1" id="s-2">开启提醒</span>
+						<br /><br />
+						<p>鼠年画鼠，快速设计卡通鼠IP形象</p>
+						<!--<br />-->
+						<p>木松子旭 网易特邀设计师</p>
+					</div>	
+				</div>
+
+			</a>
+			
+			<a href="#" class="a-1">
+				<div class="peoplecaed">
+					<div class="card-3">
+						<img class="img-ren" src="img/r4.jpg"/>
+					</div>
+					<div class="card-3">
+						<span class="span-1" id="s-1">今天  20:20 | </span>
+						<span class="span-1" id="s-2">开启提醒</span>
+						<br /><br />
+						<p>鼠年画鼠，快速设计卡通鼠IP形象</p>
+						<!--<br />-->
+						<p>木松子旭 网易特邀设计师</p>
+					</div>	
+				</div>
+				<a href="#" class="a-1">
+				<div class="peoplecaed">
+					<div class="card-3">
+						<img class="img-ren" src="img/r5.jpg"/>
+					</div>
+					<div class="card-3">
+						<span class="span-1" id="s-1">今天  20:20 | </span>
+						<span class="span-1" id="s-2">开启提醒</span>
+						<br /><br />
+						<p>鼠年画鼠，快速设计卡通鼠IP形象</p>
+						<!--<br />-->
+						<p>木松子旭 网易特邀设计师</p>
+					</div>	
+				</div>
+				<a href="#" class="a-1">
+				<div class="peoplecaed">
+					<div class="card-3">
+						<img class="img-ren" src="img/r6.jpg"/>
+					</div>
+					<div class="card-3">
+						<span class="span-1" id="s-1">今天  20:20 | </span>
+						<span class="span-1" id="s-2">开启提醒</span>
+						<br /><br />
+						<p>鼠年画鼠，快速设计卡通鼠IP形象</p>
+						<!--<br />-->
+						<p>木松子旭 网易特邀设计师</p>
+					</div>	
+				</div>
+
+			</a>
+			
+			</div>
+			
+			
+			<!--微课堂-->
+			<div class="bodyer-4">
+				<div id="">
+					<h2>微专业</h2>
+					<a href="#" id="a-i1">更多</a>
+				</div>
+				
+				<div id="">
+					<div class="d-c2">
+						<a href="#"><img src="img/w1.jpg"/></a>
+						<h3>数据分析师</h3>
+						<p class="p-1">从理论到实战，全技能数据分析人才培养...</p>
+					</div>
+					<div class="d-c2">
+						<a href="#"><img src="img/w2.png"/></a>
+						<h3>电商运营实战</h3>
+						<p class="p-1">14周打造盈利店铺，6大资源支持从0开店</p>
+					</div>
+					<div class="d-c2">
+						<a href="#"><img src="img/w3.jpg"/></a>
+						<h3>Web安全工程师</h3>
+						<p class="p-1">网易“白帽子黑客”训练营</p>
+					</div>
+					<div class="d-c2" id="clearfix">
+						<a href="#"><img src="img/w4.png"/></a>
+						<h3>Python全栈工程师</h3>
+						<p class="p-1">5个月精通Python全栈技能</p>
+					</div>
+					<!--清除浮动-->
+					<div class="clearfix">	
+					</div>
+				</div>
+				
+				<!--限时秒杀-->
+				<div class="bodyer-5">
+					<div>
+						<h2>限时秒杀</h2>
+					</div>
+					<div class="gouwu">
+						<ul>
+							<li id="l-1">
+								<span>抢购中</span>
+							</li>
+							
+							<li id="l-2">
+								<span>今天 20:20开始</span>
+							</li>
+							
+							<li id="l-3">
+								<span>明天 10:00开始</span>
+							</li>
+							
+							<li id="l-4">
+								<span>明天 14:00开始</span>
+								
+							</li>
+							
+							<li id="l-5">
+								<span>明天 20:00开始</span>
+								
+							</li>
+							
+							<li id="l-6">
+								<span>2月开始1日</span>
+								
+							</li>
+							
+						</ul>
+						<div class="clearfix">	
+						</div>
+						<div id="u1">
+							<div class="img-gou">
+								<a href="#"><img src="img/g1.png" id="img-1"/></a>
+							</div>
+							<div class="img-gou">
+								<a href="#"><img src="img/g2.png" id="img-2"/></a>
+							</div>
+							<div class="img-gou">
+								<a href=""><img src="img/g3.png" id="img-3"/></a>
+							</div>	
+							<div class="img-gou">
+								<a href=""><img src="img/g4.png" id="img-4"/></a>
+							</div>
+							<div class="img-gou">
+								<a href=""><img src="img/g5.png" id="img-5"/></a>
+							</div>
+							<div class="clearfix">
+							</div>
+						</div>
+						
+
+					</div>
+					
+				</div>
+				
+				
+				
+			</div>
+			
+			<!--中间-->	
+				<div id="z">
+					<img src="img/z.png"/>
+				</div>
+			<!--精选好课-->
+			
+			<div class="class-1">
+				<div class="c-2">
+					<h2>系列课程</h2>
+				</div>
+				<div class="c-1">
+					<a href="#"><img src="img/k1.png"/></a>					
+					<a href="#"><img src="img/k2.png"/></a>					
+					<a href="#"><img src="img/k3.png"/></a>					
+					<a href="#"><img src="img/k4.png"/></a>					
+				</div>
+			</div>
+			
+			<div class="class-1">
+				<div class="c-2">
+					<h2>精选好课</h2>
+				</div>
+				<div class="c-1">
+					<a href="#"><img src="img/k6.png"/></a>					
+					<a href="#"><img src="img/k7.png"/></a>					
+					<a href="#"><img src="img/k8.png"/></a>					
+					<a href="#"><img src="img/k9.png"/></a>					
+					<a href="#"><img src="img/k10.png"/></a>					
+				</div>
+			</div>
+			
+			<div class="class-1">
+				<div class="c-2">
+					<h2>免费好课</h2>
+				</div>
+				<div class="c-1">
+					<a href="#"><img src="img/k11.png"/></a>					
+					<a href="#"><img src="img/k12.png"/></a>					
+					<a href="#"><img src="img/k13.png"/></a>					
+					<a href="#"><img src="img/k14.png"/></a>					
+					<a href="#"><img src="img/k15.png"/></a>					
+				</div>
+			</div>
+			
+				<br />
+			<div>
+				<img src="img/f1.png"/>
+				<br />
+			</div>
+			<br />
+			<div class="footer">
+				<div id="footer-1">
+					<p>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。 </p>
+					<br />
+					<span><a href="#">关于我们</a></span>
+					<span><a href="#">联系我们</a></span>
+					<span><a href="#">帮助中心</a></span>
+					<span><a href="#">中国大学Mook</a></span>
+					<span><a href="#">关于我们</a></span>
+					
+				</div>
+				<div id="footer-2">
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+</html>
